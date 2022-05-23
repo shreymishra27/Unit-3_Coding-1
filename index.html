@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #show_products{
+        height: 50px;
+        width: 150px;
+        background-color: rgb(20, 233, 116);
+        margin: 30px 30px 30px;
+      }
+      #show_products:hover{
+        background-color: rgb(0, 255, 76);
+        cursor: pointer;
+      }
+      #products{
+        margin: 0px 30px 30px;
+
+      }
+      #products>input{
+        margin-bottom: 20px;
+        height: 30px;
+        width: 300px;
+      }
+      #add_product{
+        margin-left: 30px;
+        height: 40px;
+        width: 310px;
+        font-size: 20px;
+        background-color: coral;
+        color: white;
+      }
+      #add_product:hover{
+        background-color: darksalmon;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <button id="show_products">Show Products</button>
+    </div>
+    <div>
+      
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+      <form id="products">
+        <input type="text" id="type" placeholder="Type"><br>
+        <input type="text" id="desc" placeholder="Description"><br>
+        <input type="number" id="price" placeholder="Price"><br>
+        <input type="text" id="image" placeholder="Image"><br>
+        
+      </form>
+      <button id="add_product"> Add Product</button>
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+    
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
